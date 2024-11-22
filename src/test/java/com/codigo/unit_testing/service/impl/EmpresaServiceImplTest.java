@@ -39,9 +39,10 @@ class EmpresaServiceImplTest {
         empresa = new Empresa(4l,"ezetta inc","283839390393");
         empresaRequest = new EmpresaRequest();
         empresaRequest.setNumeroDocumento("");
-        listEmpresa= Arrays.asList(new Empresa(1l,"yolu original",
-                "22222222222"),new Empresa(2l,"yolu original2",
+        listEmpresa= Arrays.asList(new Empresa(1l,"fritz1",
+                "22222222222"),new Empresa(2l,"fritz2",
                 "32323232322"),new Empresa(3l,"yolu original3",
+                "4445454545"),,new Empresa(4l,"yolu original4",
                 "4445454545"));
 
     }
