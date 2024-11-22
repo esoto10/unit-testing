@@ -80,7 +80,7 @@ class EmpresaServiceImplTest {
 
     @Test
     void testActualizarEmpresaSuccess(){
-
+       //test para actualizar caso empresa sucess
         Long id = 1L;
         when(empresaRepository.existsById(id)).thenReturn(true);
         when(empresaRepository.findById(id)).thenReturn(Optional.of(empresa));
