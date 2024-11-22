@@ -82,8 +82,6 @@ class EmpresaServiceImplTest {
     void testActualizarEmpresaSuccess(){
 
         Long id = 1L;
-
-
         when(empresaRepository.existsById(id)).thenReturn(true);
         when(empresaRepository.findById(id)).thenReturn(Optional.of(empresa));
         when(empresaRepository.save(any())).thenReturn(empresa);
@@ -116,7 +114,7 @@ class EmpresaServiceImplTest {
 
     @Test
     void obtenerEmpresaExiste(){
-        Long identificador=1l;
+        long identificador=1l;
        when(empresaRepository.findById(identificador)).thenReturn(Optional.of(empresa));
         ResponseEntity<BaseResponse<Empresa>> response= empresaServiceImpl.obtenerEmpresa(identificador);
         assertEquals(Constants.CODE_OK, response.getBody().getCode());
